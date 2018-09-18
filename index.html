@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Employee Directory</title>
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <form id="default" class="show">
+      <h1>Welcome to Simplicity</h1>
+      <h2>The Minimalists Directory</h2>
+    </form>
+
+    <div class="sidenav">
+      <i class="far fa-address-book" style="padding-left: 35px"></i>
+      <h3>SIMPLICITY</h3>
+      <button id="print" style="width: 100px; height: 50px">Print</button>
+      <button id="verify" style="width: 100px; height: 50px">Verify</button>
+      <button id="lookup" style="width: 100px; height: 50px">Lookup</button>
+      <button id="contains" style="width: 100px; height: 50px">Contains</button>
+      <button id="update" style="width: 100px; height: 50px">Update</button>
+      <button id="add" style="width: 100px; height: 50px">Add</button>
+      <button id="delete" style="width: 100px; height: 50px">Delete</button>
+    </div>
+    <form id="verifyme">
+      <input id="verifyInput" type="text" style="margin-top: 100px; margin-left: 52px; width:250px; height: 30px;"
+        placeholder="Search by Name">
+      <button id="submitVerify" style="margin-top: 100px; margin-left: 52px; width:100px;">Submit</button>
+    </form>
+    <form id="lookupme">
+      <input id="lookupInput" type="text" style="margin-top: 100px; margin-left: 52px; width:250px; height: 30px;"
+        placeholder="Search by Name">
+      <button id="submitLookup" style="margin-top: 100px; margin-left: 52px; width:100px;">Submit</button>
+    </form>
+    <form id="containsme">
+      <input id="containsInput" type="text" style="margin-top: 100px; margin-left: 52px; width:250px; height: 30px;"
+        placeholder="Search by Letters">
+      <button id="submitContains" style="margin-top: 100px; margin-left: 52px; width:100px;">Submit</button>
+    </form>
+    <form id="printme">
+    </form>
+    <form id="addme">
+      <input id="addInput" type="text" style="margin-top: 100px; margin-left: 52px; width:250px; height: 30px;"
+        placeholder="Add Name">
+      <input id="addInput2" type="text" style="margin-top: 100px; margin-left: 52px; width:250px; height: 30px;"
+        placeholder="Add Office Number">
+      <input id="addInput3" type="text" style="margin-top: 100px; margin-left: 52px; width:250px; height: 30px;"
+        placeholder="Add Phone Number">
+      <button id="submitAdd" style="margin-top: 100px; margin-left: 52px; width:100px;">Submit</button>
+    </form>
+    <form id="updateme">
+      <input id="updateInput" type="text" style="margin-top: 100px; margin-left: 52px; width:250px; height: 30px;"
+        placeholder="Name">
+      <input id="updateInput2" type="text" style="margin-top: 100px; margin-left: 52px; width:250px; height: 30px;"
+        placeholder="Office Number">
+      <input id="updateInput3" type="text" style="margin-top: 100px; margin-left: 52px; width:250px; height: 30px;"
+        placeholder="Phone Number">
+      <button id="submitUpdate" style="margin-top: 100px; margin-left: 52px; width:100px;">Submit</button>
+    </form>
+    <form id="deleteme">
+      <input id="deleteInput" type="text" style="margin-top: 100px; margin-left: 52px; width:250px; height: 30px;"
+        placeholder="Enter Name to be Deleted">
+      <button id="submitDelete" style="margin-top: 100px; margin-left: 52px; width:100px;">Submit</button>
+    </form>
+    <div id="content"></div>
+    <script src="render.js"></script>
+    <script src="dom.js"></script>
+    <script src="app.js"></script>
+  </main>
+</body>
+
+</html>
